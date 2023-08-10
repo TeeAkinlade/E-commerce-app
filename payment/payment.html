@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/payment/payment.css">
+    <script src="https://kit.fontawesome.com/a170b4e7c8.js" crossorigin="anonymous"></script>
+    <title>payment</title>
+</head>
+<body>
+    <div class="row1">
+        <div class="col-75">
+            <div class="container">
+                <nav class="shopping-nav">
+                    <a href="/index.html"><p>RSTORE</p></a>   
+                </nav>   
+                <form class="payment" action="/invoice/invoice.html">
+                    <p class="head"><i class="fa-brands fa-apple"></i>Pay</p>
+                <p class="top">or</p>
+                <div class="row">
+                    <div class="col-50">
+                        <label for="email">Email</label>
+                        <input required type="text" id="email" name="email">
+                        <label for="cardname"> Name on card</label>
+                        <input required type="text" id="cardname" name="cardname">
+                        <div class="row">
+                            <label for="cardnumber">Card number</label>
+                            <input required type="text" id="cardnumber" name="cardnumber">
+                            <div class="col-50">
+                                <label for="exp">Exp date</label>
+                                <input required type="text" id="exp" name="exp">
+                            </div>
+                            <div class="col-50">
+                                <label for="zip">CVV</label>
+                                <input required type="text" id="cvv" name="cvv">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-50">  
+                        <label for="address">Address</label>
+                        <input required type="text" id="address" name="address">
+        
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="city">City </label>
+                            <input required type="text" id="city" name="city">
+                        </div>
+                        <div class="col-50">
+                            <label for="state">Sate/Province</label>
+                            <input required type="text" id="state" name="state">
+                        </div>
+                        <div class="col-50">
+                            <label for="code">Postal code</label>
+                            <input required type="text" id="code" name="code">
+                        </div>
+                    </div>
+                </div>
+                
+                <label>
+                    <input required type="checkbox" checked="checked" name="sameadr"> Billing address is the same as shipping address
+                </label>
+                <input required type="submit" value="Pay" class="btn" onclick="handlePay()">
+                <p id="lock"><i class="fa-solid fa-lock"></i> Payment details stored in plain text</p>
+                </form>
+          </div>
+        </div>
+        <div class="right-row">
+            <div class="product-row"></div>
+            <div class="totalPrice">
+                
+                <label for="Discount">Discount code</label>
+                <div class="discount">
+                    <input type="text" id="discount-code">
+                    <button id="discount-btn">Apply</button>
+                </div>
+                <p id="total" class="subtotal">Subtotal</p>
+                <p id="total" class="tax">Taxes </p>
+                <p id="total" class="shipping">Shipping estimate </p>
+                <h4 id="" class="total">Total</h4>
+        </div>
+      </div>
+    <script src="/payment/payment.js"></script>
+</body>
+</html>

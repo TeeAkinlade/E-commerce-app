@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-align: none;
+    font-family: 'Roboto', sans-serif;
+}
+.shopping-nav a{
+    color: rgb(21, 21, 150);
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none;
+}
+.shopping-nav p{
+    margin-top:1.5em;
+}
+.row1{
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  padding: 5px 20px 15px 20px;
+  width: 600px;
+  margin-left: 8em;
+}
+.head{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 6px;
+    margin: 4em 0 2em 0;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+    color: #ccc;
+    font-weight: 600;
+}
+.top:before, .top:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+.top:before {
+    margin-right: 10px
+}
+.top:after {
+    margin-left: 10px
+}
+/* ..................................................... */
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* margin: 0 -16px; */
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+#cvv, #state{
+  margin-left: 20px;
+  width: 91%;
+}
+ #code{
+  width: 87%;
+  margin-left: 20px;
+}
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+label {
+  margin-bottom: 8px;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(94, 92, 92);
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #5604ee;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #6e42be;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+#lock{
+  text-align: center;
+  color: grey;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 1em;
+}
+/* ...........................right row............. */
+.right-row{
+  background-color: rgb(245, 248, 248);
+  width: 500px;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #7c7c7c;
+}
+.cart-item{
+  border-top: 1px solid #e6e6e6 ;
+  border-bottom: 1px solid #e6e6e6 ;
+  display: flex;
+  gap: 2em;
+  padding:2em 0;
+  margin: 0 2em;
+  position: relative;
+}
+/* ..................image..... */
+.product-img{
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
+}
+/* ......details.............. */
+.cart-details p{
+  font-weight: 600;
+  color: #585858;
+  margin-bottom: 1em;
+  font-size: 15px;
+}
+.delete{
+  color: #919090;
+  /* margin-left: 200px; */
+  cursor: pointer;
+}
+#shoppingCartDetails{
+  display:flex;
+}
+
+.totalPrice{
+  width: 450px;
+  height: 400px;
+  padding: 2em;
+  border-radius: 5px;
+  border-top: 0.5px solid #c9c6c6;
+}
+#total, #total2{
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+  color:#7c7c7c ;
+  font-size: 14px;
+  padding: 1em 0;
+  font-weight: 500;
+}
+.total{
+  border-top: 0.5px solid #c9c6c6;
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+  color:#1f1e1e ;
+  font-size: 14px;
+  padding: 1em 0;
+  font-weight: 500;
+}
+#deleteIcon{
+  cursor: pointer;
+}
+span{
+  color: white;
+  background-color:#a3a3a3;
+  padding: 2px 5px;
+  border-radius: 50%;
+  font-size:11px;
+  margin-left: 5px;
+}
+#price{
+color: #413f3f;
+}
+#edit-cart{
+  color: #5604ee;
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  gap: 20px;
+}
+#edit-cart p{
+  color: #5604ee;
+}
+#edit-cart hr{
+  height: 20px;
+  border: 1px solid rgb(181, 181, 185);
+}
+.discount{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#discount-btn{
+  padding: 10px 12px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #b4b4b4;
+  font-weight: 600;
+  color: #4b4949;
+  font-size: 15px;
+  margin-top: -1em;
+}

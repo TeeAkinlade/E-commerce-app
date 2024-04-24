@@ -1,6 +1,5 @@
 let data = JSON.parse(localStorage.getItem('selectedItem'));
 let cartArr = JSON.parse(localStorage.getItem('cartItem'));
-console.log(cartArr)
 const cart = document.querySelector('#cart')
 
 let productInformation = document.querySelector('.detail-info')

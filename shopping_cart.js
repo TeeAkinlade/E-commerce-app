@@ -1,5 +1,4 @@
 const result = JSON.parse(localStorage.getItem('cartItem'));
-console.log(result)
 let shoppingItem = document.getElementById('shoppingCartItem');
 const cart = document.getElementById('cart');
 
@@ -48,8 +47,6 @@ const render = () => {
 
 render();
 cart.innerHTML = shoppingCart.length;
-
-console.log(shoppingCart)
 
 // ......................remove an item....................
 const removeItem = document.querySelectorAll('.fa-xmark');

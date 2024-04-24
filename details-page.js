@@ -11,9 +11,6 @@ const products = data.map(product => {
 
   for(let i = 1; i <= ratings; i++){
     stars.push('<i class="fa-solid fa-star"></i>')
-    // if(ratings.length < 5){
-    //   stars.appendChild('<i class="fa-solid fa-star"></i>')
-    // }
   }
 
   for(let i = 0; i <= stars.length; i++){
